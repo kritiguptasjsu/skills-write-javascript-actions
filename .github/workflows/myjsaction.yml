@@ -1,0 +1,13 @@
+on: [workflow_dispatch]
+jobs:
+  custom_js_action_job:
+    runs-on: ubuntu-latest
+    name: Custom JS Action Demo
+    steps:
+    - name: First JS action step
+      id: myjsaction
+      uses: kritiguptasjsu/demojsaction@v1
+      with:
+        name-of-you: 'Gupta'
+    - name: Get the output message time
+      run: echo "The time was ${{ steps.myjsaction.outputs.time }}"
