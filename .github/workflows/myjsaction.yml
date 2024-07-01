@@ -6,7 +6,7 @@ jobs:
     steps:
     - name: First JS action step
       id: myjsaction
-      uses: kritiguptasjsu/demo-js-action@v1.1
+      uses: kritiguptasjsu/demo-js-action@v1.2
       with:
         name-of-you: 'Gupta'
     - name: Get the output message time
